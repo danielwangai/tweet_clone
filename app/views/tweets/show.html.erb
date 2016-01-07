@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<%= image_tag @tweet.picture.url(:large) %>
+
+<p>
+  <strong>Content:</strong>
+  <%= @tweet.content %>
+</p>
+<p>
+	<td><%= @tweet.user.email %></td>
+</p>
+
+<h3><%= @tweet.retweets.count %> Retweets</h3>
+
+
+<%= render @tweet.retweets %>
+<% if user_signed_in? %>
+	<h3> Reply to thread</h3>
+	<%= render "retweets/form" %>
+<% end %>
+
+<%= link_to 'Edit', edit_tweet_path(@tweet) %> |
+<%= link_to 'Back', tweets_path %>

@@ -1,0 +1,4 @@
+<%= simple_form_for([@tweet, @tweet.retweets.build]) do |f| %>
+	<%= f.input :retweet %>
+	<%= f.button :submit %>
+<% end %>
