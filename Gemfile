@@ -2,7 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.1'
 
-gem 'sqlite3'
+# gem 'sqlite3'
+
+gem 'pg'
 
 gem 'masonry-rails', '~> 0.2.4'
 
@@ -35,6 +37,8 @@ gem 'will_paginate', '~> 3.0.7'
 gem 'bootstrap-will_paginate', '~> 0.0.10'
 
 gem 'faker', '~> 1.5.0'
+
+gem 'rails_12factor', '~> 0.0.3'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
